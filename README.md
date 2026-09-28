@@ -6,6 +6,30 @@
 
 ---
 
+## Thông tin bài nộp
+
+- **Họ và tên:** Phạm Khắc Tú (Pham Khac Tu)
+- **MSSV:** 2A202602866
+- **Repository:** `K4-L3-DAY11-PhamKhacTu-2A202602866-Guardrails-HITL-Responsible-AI`
+
+### Cách chạy nhanh
+
+Từ thư mục gốc của repo trên Windows PowerShell:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python src/main.py --part 2  # Input/output guardrails
+python src/main.py --part 3  # Pipeline và outputs/results.json
+python src/main.py --part 4  # Red team và outputs/attack_results.json
+pytest tests/smoke -q
+pytest tests/public -q
+python scripts/grade.py --submission-dir . --out outputs/grade_report.json
+```
+
+API key được đặt trong `.env` trên máy cá nhân; file này không được commit lên GitHub.
+
+---
+
 ## Thời lượng
 
 | Phần | Thời gian |
