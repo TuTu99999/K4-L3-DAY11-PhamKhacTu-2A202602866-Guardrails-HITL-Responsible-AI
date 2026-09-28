@@ -11,7 +11,11 @@ async def chat_with_agent(agent, runner, user_message: str, session_id=None):
     Works with OpenAIRunner (OpenAI Red / OpenRouter Blue) and Google ADK (Gemini Red).
     """
     provider = getattr(runner, "provider", None)
-    if isinstance(runner, OpenAIRunner) or provider in ("openrouter", "openai"):
+    if (
+        isinstance(runner, OpenAIRunner)
+        or provider in ("openrouter", "openai", "gemini")
+        and callable(getattr(runner, "chat", None))
+    ):
         text = await runner.chat(agent, user_message)
         return text, None
 

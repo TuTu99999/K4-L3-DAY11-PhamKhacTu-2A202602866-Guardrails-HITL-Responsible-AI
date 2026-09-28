@@ -169,6 +169,10 @@ def get_openai_api_key() -> str:
     return os.environ.get("OPENAI_API_KEY", "").strip()
 
 
+def get_google_api_key() -> str:
+    return os.environ.get("GOOGLE_API_KEY", "").strip()
+
+
 def red_openai_client_kwargs() -> dict:
     return {"api_key": get_openai_api_key() or None}
 
