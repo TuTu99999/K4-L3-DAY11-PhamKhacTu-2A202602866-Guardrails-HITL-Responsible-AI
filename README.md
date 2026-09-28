@@ -8,7 +8,7 @@
 
 ## Thông tin bài nộp
 
-- **Họ và tên:** Phạm Khắc Tú (Pham Khac Tu)
+- **Họ và tên:** Phạm Khắc Tú
 - **MSSV:** 2A202602866
 - **Repository:** `K4-L3-DAY11-PhamKhacTu-2A202602866-Guardrails-HITL-Responsible-AI`
 
